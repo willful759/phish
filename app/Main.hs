@@ -32,13 +32,6 @@ getStyleR = sendFile "text/css" "index_files/styles.css"
 getHomeR :: Handler ()
 getHomeR = sendFile "text/html" "index.html"
 
-  {-
-getHomeR :: Handler Html
-getHomeR = do
-  htmlContent <- liftIO $ IOT.readFile "index.html"
-  return $ preEscapedToMarkup htmlContent
-  -}
-
 postHomeR :: Handler ()
 postHomeR = do
   username <- lookupPostParam "username_or_email"
