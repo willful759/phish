@@ -1,0 +1,3 @@
+example file with a list of pwned credentials
+
+phished:ohNoIGotPwned
